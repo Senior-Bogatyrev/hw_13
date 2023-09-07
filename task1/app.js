@@ -16,15 +16,22 @@ $('#generateBtn').click(function(){
     } else{
         let result ='';
         let randomList = new Array();
-        if ($('#numeric').is(':checked')){
+        let num = $('#numeric').is(':checked');
+        let up = $('#uppercase').is(':checked')
+        let low = $('#lowercase').is(':checked')
+        if (num){
             randomList = randomList.concat(digits);
         };
-        if ($('#uppercase').is(':checked')){
+        if (up){
             randomList = randomList.concat(uppercaseLetter);
         };
-        if ($('#lowercase').is(':checked')){
+        if (low){
             randomList = randomList.concat(lowercaseLetter);
         };
+        if (!num && !up && !low){
+            $('#display').val('Выберите не менее 1 вида символов.').css('color', 'red');
+            return
+        }
         for(let i=0; i<$('.inputWidth').val(); i++){
             result += randomList[getRandomNumber(1, randomList.length - 1)]
         };
