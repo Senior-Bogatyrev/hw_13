@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+hr{
+    margin-bottom: 15px;
+}
+#container{
+    background-color: blanchedalmond;
+    max-width: 400px;
+}
+#innerContain{
+    padding: 15px;
+}
+#lengthInp{
+    margin-top: 15px;
+}
+#header, #res{
+    font-weight: 700;
+    font-size: 20px;
+}
+#generateBtn{
+    width: 130px;
+    margin: 15px 0;
+}
+#checkboxContain{
+    margin: 10px 0;
+}
+#display{
+    width: 250px;
+}
+.inputOne{
+    display: inline-block;
+}
+.inputWidth{
+    max-width: 40px;
+}
+.chb{
+    margin-top: 10px;
+}

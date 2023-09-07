@@ -7,7 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="container">
+        <div id="innerContain">
+            <p id="header">Random String Generator</p>
+            <div id="lengthInp">
+                <p class="inputOne">String should be</p>
+                <input type="number" class="inputOne inputWidth">
+                <p class="inputOne">characters long.</p>
+            </div>
+            <div id="checkboxContain">
+                <p>Which characters are allowed to occur in the strings?</p>
+                <div class="chb">
+                    <input type="checkbox" name="numeric">
+                    <label for="numeric">Numeric digits (0-9)</label>
+                </div>
+                <div class="chb">
+                    <input type="checkbox" name="uppercase">
+                    <label for="uppercase">Uppercase letters (A-Z)</label>
+                </div>
+                <div class="chb">
+                    <input type="checkbox" name="lowercase">
+                    <label for="lowercase">Lowercase letters (a-z)</label>
+                </div>
+
+            </div>
+            <button id="generateBtn">Generate</button>
+            <hr>
+            <label for="result" id="res">Result: </label>
+            <input type="text" id="display">
+        </div>
+    </div>
     
+
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
