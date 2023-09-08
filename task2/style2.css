@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: blanchedalmond;
+    width: 100vw;
+    height: 100vh;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    width: 19vw;
+}
+#leftRight{
+    width: 1vw;
+    margin-top: 49vh;
+    font-size: 2vh;
+    font-weight: 700;
+    cursor: pointer;
+}
+#topL{
+    height: 49vh;
+    background-color: rgba(181,220,233,255);
+}
+#bottomL{
+    height: 49vh;
+    background-color: rgba(255,189,199,255);
+}
+#right{
+    width: 80vw;
+}
+#topR{
+    height: 49vh;
+    background-color: rgba(40,185,178,255);
+}
+#bottomR{
+    height: 49vh;
+    background-color: rgba(255,169,132,255);
+}
+#topBottomL, #topBottomR{
+    height: 2vh;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2vh;
+    cursor: pointer;
+}
